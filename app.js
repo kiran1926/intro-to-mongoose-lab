@@ -39,6 +39,7 @@ const connect = async () => {
             
             Select the number of the action: 
             `);
+        selection = parseInt(selection);
       switch (selection) {
         case "1":
           await createCustomer();
