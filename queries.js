@@ -21,6 +21,10 @@ const createCustomer = async () => {
 const viewCustomers = async () => {
   try {
     const customers = await Customer.find({});
+    if (customers.length === 0){
+        console.log("There are no customers in the database.");
+        return;
+    }
     console.log("Below is a list of customers: ");
     customers.forEach((customer) => {
       console.log(
