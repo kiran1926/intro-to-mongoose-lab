@@ -37,7 +37,7 @@ const connect = async () => {
             4. Delete a customer
             5. Quit
             
-            Select the number of the action: 
+            Number of the action to run: 
             `);
         selection = parseInt(selection);
       switch (selection) {
